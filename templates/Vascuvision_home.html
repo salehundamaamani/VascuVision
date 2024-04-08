@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>VASCUVISION</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="static/assets/logo.png">
+            <a href="#" target="_blank">Vascuvision</a>
+        </div>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Vision</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolio">Our Team</a></li>
+        </ul>
+        <button>Contact Us</button>
+        <button id="menuButton" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+
+    <div class="main" id="main">
+        <div class="left">
+            <h3>Welcome to <span>Vascuvision</span> </h3>
+
+            <p>
+               Our mission is to transform the way cardiovascular health 
+                is assessed and managed, leveraging advanced technologies to provide accurate, efficient, and comprehensive solutions.
+            </p>
+            <form action="/file_upload" method="GET">
+                <button type="submit">Let's Start Visualizing</button>
+            </form>
+            <form action="/Heart_disease_classifier" method="GET">
+                <button type="submit">Heart Disease Classifier</button>
+            </form>
+        </div>
+
+        <div class="right">
+            <img src="static/assets/header-img.png">
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h3>Our Vision and Mission</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class='bx bx-directions'></i></div>
+                <h4>Revolutionize Cardiac Imaging Analysis</h4>
+                <p>
+                    We strive to revolutionize cardiac imaging analysis by leveraging advanced AI and deep learning techniques 
+                    to provide accurate, efficient, and comprehensive solutions.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
+                <h4>Enhance Diagnostic Accuracy</h4>
+                <p>
+                    Our mission is to enhance diagnostic accuracy in 
+                    cardiovascular health assessments by integrating multi-modal data from MRI, CT, and SPECT-MPI scans.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-figma'></i></i></div>
+                <h4>Reduce Interpretation Time</h4>
+                <p>
+                    We aim to reduce interpretation time for cardiac imaging analysis, 
+                    enabling clinicians to make timely and informed decisions in managing cardiovascular diseases.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-code-alt'></i></i></div>
+                <h4>Improve Patient Outcomes</h4>
+                <p>
+                    Our ultimate goal is to improve patient outcomes in managing 
+                    cardiovascular diseases through innovative AI-driven solutions that empower clinicians and improve healthcare delivery.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="left">
+            <img src="static/assets/about-img.png">
+        </div>
+        <div class="right">
+            <h3>About Us</h3>
+           <!----<h3>About Me</h3>-->
+            <p>
+                VascuVision is a collaborative project led by researchers from the University of Windsor, Canada. 
+                Our team is dedicated to advancing the field of cardiac imaging analysis through cutting-edge research, technology development, 
+                and clinical collaboration.
+            </p>
+            <p>
+                By combining expertise in AI, deep learning, and cardiology,we aim to address the challenges and 
+                opportunities in cardiac diagnostics and make a meaningful impact on patient care.
+            </p>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="header">
+            <div class="info">
+                <h3>Our Team</h3>
+            </div>
+            <button><i class='bx bxl-Github'></i> Visit Our Github</button>
+        </div>
+
+        <div class="portfo-items">
+            <div class="item">
+                <img src="static/assets/sc-1.jpg">
+                <div class="info">
+                    <h4>Aamani Salehundam</h4>
+                    <p>
+                        HIPAA Certified & Backend Operations
+                    </p>
+                    <a href="https://www.linkedin.com/in/aamani-salehundam/">View profile <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="static/assets/sc-2.jpg">
+                <div class="info">
+                    <h4>Rishin Pandit</h4>
+                    <p>
+                        AI Operations
+                    </p>
+                    <a href="https://www.linkedin.com/in/rishin-pandit09/">View profile <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="static/assets/sc-3.jpg">
+                <div class="info">
+                    <h4>Saran Kumar Saravanan</h4>
+                    <p>
+                        User Experience
+                    </p>
+                    <a href="https://www.linkedin.com/in/saran-kumar-8b758a18a/">View profile <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   
+
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <img src="static/assets/logo.png">
+                <a href="https://youtube.com/@AsmrProg">Vascuvision</a>
+            </div>    
+                <p>
+                    Together, Let's Shape the Future of Cardiac Imaging Analysis with VascuVision.
+                </p>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <p>
+                &copy;copyrighted, submitted to University of Windsor, Applied AI.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function openMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>
